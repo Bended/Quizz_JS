@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Personnality Quizz</title>
+
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./test_perso.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+
+<!--______________  QUESTION 1 ________________-->
+
+<div class="container-fluid">
+    <div class="container-fluid form">
+        <div class="row">
+                <div class="col-md-12"><h1>Personality Test</h1>
+                </div>
+        </div>
+    </div>
+    <section class="container-fluid form" id="q1">
+        <div class="row">
+            <div class="col-md-12">
+            <img name="illustration" class="image" src="https://usatmmajunkie.files.wordpress.com/2017/06/li-jingliang-frank-camacho-ufc-fight-night-1111.jpg?w=1000&h=600&crop=1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><h3>Question 1 ? </h3></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"><span class="answer">Input you First name</span>
+                <input type="text" class="answer_txt"/></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><span class="answer">input you Name</span><input type="text" class="answer_txt"/></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button onclick="next1()">Next</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!--______________  QUESTION 2 ________________-->
+
+    <div class="container-fluid form" id="q2">
+        <div class="row">
+            <div class="col-md-12">
+            <img class="image" src="https://www.kent.ac.uk/sportsciences/images/swimmer2-3x2.jpg?123">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><h3>Question 2 ? </h3></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+                <input type="checkbox" name="vehicle" value="Car" checked> I have a 1<br>
+                <input type="checkbox" name="vehicle" value="Car" checked> I have a 2<br>
+                <input type="checkbox" name="vehicle" value="Car" checked> I have a 3<br>
+            </div>
+
+        </div>
+        <div class="col-md-12">
+            <button onclick="prev2()">Previous</button>
+           <button onclick="next2()">Next</button>
+        </div>
+    </div>
+
+<!--______________  QUESTION 3 ________________-->
+
+    <div class="container-fluid form" id="q3">
+        <div class="row">
+            <div class="col-md-12">
+            <img class="image" src="https://article.images.consumerreports.org/prod/content/dam/cro/news_articles/health/CR-Health-Crop-Food-Child-10-16">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><h3>Question 3 ? </h3></div>
+        </div>
+
+        <div class="row">
+            <span class="answer">Choise 1</span><input type="radio" name="choise" id="myRadio1">
+        </div>
+        <div class="row">
+            <span class="answer">Choise 2</span><input type="radio" name="choise" id="myRadio2">
+        </div>
+         <div class="row">
+            <span class="answer">Choise 3</span><input type="radio" name="choise" id="myRadio3">
+        </div>
+         <div class="row">
+            <span class="answer">Choise 4</span><input type="radio" name="choise" id="myRadio4">
+        </div>
+        <div class="col-md-12">
+            <button onclick="prev3()">Previous</button>
+            <button onclick="next3()">Next</button>
+        </div>
+    </div>
+<!--______________  QUESTION 4 ________________-->
+
+    <div class="container-fluid form" id="q4">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+            <img class="image" src=https://usatmmajunkie.files.wordpress.com/2017/06/li-jingliang-frank-camacho-ufc-fight-night-1111.jpg?w=1000&h=600&crop=1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"><h3>Question 4 ? </h3></div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"><input type="button" value="choix 1" class="answer button"/><input type="button" value="Choix 2" class="answer button" /></div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"><input type="button" value="Choix 3" class="answer button" /><input type="button" value="Choix 2" class="answer button" /></div>
+            <div class="col-md-3"></div>
+        </div>
+            <button onclick="prev4()">Previous</button>
+            <button onclick="next4()">Next</button>
+
+    </div>
+
+<!--______________  QUESTION 5________________-->
+
+    <div class="container-fluid form" id="q5">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+            <img class="image" src=https://usatmmajunkie.files.wordpress.com/2017/06/li-jingliang-frank-camacho-ufc-fight-night-1111.jpg?w=1000&h=600&crop=1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"><h3>Question 5 ? </h3></div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <select name="cars">
+                    <option value="10">Select your answer.</option>
+                    <option value="8">It is great to have someone there when you get home.</option>
+                    <option value="6">You’d much rather live by yourself.</option>
+                    <option value="4">Fiat</option>
+                    <option value="2">Audi</option>
+                </select>
+            </div>
+        </div>
+
+        <button onclick="prev5()">Previous</button>
+        <button onclick="submit()">SUBMIT</button>
+
+    </div>
+
+<script src="./test_perso.js"></script>
+
+
+</body>
+
+</html>

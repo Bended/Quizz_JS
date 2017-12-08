@@ -1,0 +1,67 @@
+/*function myFunction() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "checkbox");
+    document.body.appendChild(x);
+}*/
+
+h1  {
+    color:#333;
+    font-family:verdana,serif;
+    font-size:1.5em;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e6e6e6;
+    text-align:center;
+  }
+
+h3{
+  color: #6699ff;
+}
+
+body{
+    border = 0px;
+    }
+
+.form{
+    display: block;
+    text-align:center;
+      }
+
+.image{
+    width:90%;
+    max-width:500px;
+    height:auto;
+    }
+
+.question{
+      background-color:white;
+      height:50px;
+      font-size:25px;
+      bottom: 10px;
+      position:relative;
+      color:#6699ff;
+      padding:5px;
+      }
+
+
+
+.answer{
+    margin:10px;
+    text-align:left;
+}
+
+#q1{
+    display:block;
+    }
+
+#q2, #q3, #q4, #q5{
+    display: none;
+    }
+
+
+#q4 .button{
+    color:red;
+    width:100px;
+    text-align:center;
+    border-radius:5px;
+    }
