@@ -68,10 +68,10 @@
 
         <div class="row">
             <div class="col-md-6 check">
-                <input type="checkbox" name="vehicle" value="2">Beer<br>
-                <input type="checkbox" name="vehicle" value="5">Wine <br>
-                <input type="checkbox" name="vehicle" value="10">Water <br>
-                <input type="checkbox" name="vehicle" value=6>Cola<br>
+                <input type="checkbox" name="drink" value="Beer">Beer<br>
+                <input type="checkbox" name="drink" value="Wine">Wine <br>
+                <input type="checkbox" name="drink" value="Water">Water<br>
+                <input type="checkbox" name="drink" value="Cola">Cola<br>
             </div>
         </div>
 
@@ -95,16 +95,16 @@
         </div>
 
         <div class="row">
-            <input type="radio" name="choise" id="myRadio1" value="10"><span class="answer">Less than 3 cups</span>
+            <input type="radio" name="coffee" id="myRadio1" value="10"><span class="answer">Less than 3 cups</span>
         </div>
         <div class="row">
-            <input type="radio" name="choise" id="myRadio2" value="8"><span class="answer">4 - 6 cups</span>
+            <input type="radio" name="coffee" id="myRadio2" value="8"><span class="answer">4 - 6 cups</span>
         </div>
          <div class="row">
-            <input type="radio" name="choise" id="myRadio3" value="5"><span class="answer">8 - 10 cups</span>
+            <input type="radio" name="coffee" id="myRadio3" value="5"><span class="answer">8 - 10 cups</span>
         </div>
          <div class="row">
-            <input type="radio" name="choise" id="myRadio4" value="2"><span class="answer">more than 10 cups</span>
+            <input type="radio" name="coffee" id="myRadio4" value="2"><span class="answer">more than 10 cups</span>
         </div>
         <div class="col-md-12">
             <button onclick="prev3()" class="prev">Previous</button>
@@ -129,12 +129,12 @@
 
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6"><input type="button" onclick="q4()" value="Breakfast" class="buttonAnswer"/><input type="button" onclick="q4()" value="Lunch" class="buttonAnswer" /></div>
+            <div class="col-md-6"><input type="button" value="Breakfast" class="buttonAnswer" id="but1"/><input type="button" value="Lunch" class="buttonAnswer" id="but2"/></div>
             <div class="col-md-3"></div>
         </div>
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6"><input type="button" onclick="q4()" value="Diner" class="buttonAnswer" /><input type="button" onclick="q4()" value="Snack" class="buttonAnswer" /></div>
+            <div class="col-md-6"><input type="button" value="Diner" class="buttonAnswer" id="but3"/><input type="button" value="Snack" class="buttonAnswer" id="but4"/></div>
             <div class="col-md-3"></div>
         </div>
             <button onclick="prev4()" class="prev">Previous</button>
@@ -163,16 +163,16 @@
             <div class="col-md-6">
                 <select name="meal" class="food">
                     <option value="0">Select</option>
-                    <option value="8">Meat</option>
-                    <option value="6">Vegetables</option>
-                    <option value="4">Fruit</option>
+                    <option value="6">Meat</option>
+                    <option value="10">Vegetables</option>
+                    <option value="8">Fruit</option>
                     <option value="2">Candy</option>
                 </select>
             </div>
         </div>
 
         <button onclick="prev5()" class="prev">Previous</button>
-        <button onclick="submit()">SUBMIT</button>
+        <button onclick="q1()">SUBMIT</button>
     </div>
 
     <div class="container-fluid">

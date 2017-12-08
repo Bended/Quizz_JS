@@ -71,3 +71,31 @@ function prev5() {
     }
 
 
+function q1() {
+    var firstName = document.getElementsByClassName("answer_txt")[0].value;
+    var lastName = document.getElementsByClassName("answer_txt")[0].value;
+    }
+
+function q2() {
+    var drink = [];
+    var score_q2 = 0;
+    var a = document.getElementsByName("drink");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].checked == true) {
+            drink.push(a[i].value)
+            }
+        } console.log(drink);
+        for (var x = 0; x < drink.length; i++)  {
+            if (drink[i] == "beer"){
+                score_q2 = score_q2 + 4}
+            if (drink[i] == "wine"){
+                score_q2 = score_q2 + 2}
+            if (drink[i] == "water"){
+                score_q2 = score_q2 + 10}
+            if (drink[i] == "Cola"){
+                score_q2 = score_q2 + 6}
+            }
+            console.log(score_q2);
+    }
+
+
