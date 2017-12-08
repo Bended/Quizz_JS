@@ -23,7 +23,6 @@ body{
     }
 
 .form{
-    display: block;
     text-align:center;
       }
 
@@ -43,25 +42,118 @@ body{
       padding:5px;
       }
 
-
-
 .answer{
     margin:10px;
     text-align:left;
-}
+    }
+
+.answer_txt{
+    margin:10px;
+   }
+
+#step1{
+    background-color:#008CBA;
+    color:white;
+    }
 
 #q1{
     display:block;
+    text-align:center;
     }
 
 #q2, #q3, #q4, #q5{
     display: none;
+    text-align:center;
     }
 
-
-#q4 .button{
-    color:red;
-    width:100px;
-    text-align:center;
+button{
+    background-color: #4CAF50; /* Green */
+    border: none;
     border-radius:5px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 5px 5px 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+
+button.next{
+    background-color: #008CBA;
+    color: white;
+    }
+button.next:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+    }
+
+button.prev{
+    background-color: #e7e7e7;
+    color: black;
+    }
+
+button.prev:hover{
+    background-color: white;
+    border: 2px solid #e7e7e7;
+    }
+
+.check{
+        margin-left:45%;
+        text-align:left;
+    }
+
+.buttonAnswer{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius:5px;
+    color: white;
+    width: 130px;
+    padding: 10px 25px;
+    text-align: center;
+    align:left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left:30px;
+    }
+
+.buttonAnswer:hover{
+    background-color: white; /* Green */
+    color: #4CAF50;
+    }
+
+.buttonAnswer:focus{
+    background:#99c2ff;
+    color:black;
+    border:none
+    }
+
+.food{
+    width: 30%;
+    min-width:50px;
+    }
+
+ul{
+    text-align:center;
+    margin-left:-30px;
+    margin-top:30px;
+    }
+
+li{
+    display:inline;
+    margin:20px;
+    padding: 2px 8px;
+    width:10px;
+    border: 2px solid #008CBA;
+    border-radius: 8px;
+    font-height: 20px;
     }

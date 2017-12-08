@@ -27,62 +27,59 @@
 <!--______________  QUESTION 1 ________________-->
 
 <div class="container-fluid">
-    <div class="container-fluid form">
         <div class="row">
                 <div class="col-md-12"><h1>Personality Test</h1>
                 </div>
         </div>
-    </div>
-    <section class="container-fluid form" id="q1">
+    <div class="container-fluid form" id="q1">
         <div class="row">
             <div class="col-md-12">
             <img name="illustration" class="image" src="https://usatmmajunkie.files.wordpress.com/2017/06/li-jingliang-frank-camacho-ufc-fight-night-1111.jpg?w=1000&h=600&crop=1">
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12"><h3>Question 1 ? </h3></div>
+            <div class="col-md-12"><h3>Who are you ? </h3></div>
         </div>
 
         <div class="row">
-            <div class="col-md-3"><span class="answer">Input you First name</span>
-                <input type="text" class="answer_txt"/></div>
+            <div class="col-md-12"><input type="text" class="answer_txt" placeholder="First name"/></div>
         </div>
         <div class="row">
-            <div class="col-md-12"><span class="answer">input you Name</span><input type="text" class="answer_txt"/></div>
+            <div class="col-md-12"><input type="text" class="answer_txt" placeholder="Last name"/></div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <button onclick="next1()">Next</button>
-            </div>
+            <div class="col-md-12"><button onclick="next1()" class="next">Next</button></div>
         </div>
-    </section>
-</div>
+    </div>
 
 <!--______________  QUESTION 2 ________________-->
 
     <div class="container-fluid form" id="q2">
+
         <div class="row">
             <div class="col-md-12">
             <img class="image" src="https://www.kent.ac.uk/sportsciences/images/swimmer2-3x2.jpg?123">
             </div>
         </div>
+
         <div class="row">
-            <div class="col-md-12"><h3>Question 2 ? </h3></div>
+            <div class="col-md-12"><h3>Which beverage do you drink every day ？</h3></div>
         </div>
 
         <div class="row">
-            <div class="col-md-12">
-                <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
-                <input type="checkbox" name="vehicle" value="Car" checked> I have a 1<br>
-                <input type="checkbox" name="vehicle" value="Car" checked> I have a 2<br>
-                <input type="checkbox" name="vehicle" value="Car" checked> I have a 3<br>
+            <div class="col-md-6 check">
+                <input type="checkbox" name="vehicle" value="2">Beer<br>
+                <input type="checkbox" name="vehicle" value="5">Wine <br>
+                <input type="checkbox" name="vehicle" value="10">Water <br>
+                <input type="checkbox" name="vehicle" value=6>Cola<br>
             </div>
+        </div>
 
-        </div>
         <div class="col-md-12">
-            <button onclick="prev2()">Previous</button>
-           <button onclick="next2()">Next</button>
+            <button onclick="prev2()" class="prev">Previous</button>
+           <button onclick="next2()" class="next">Next</button>
         </div>
+
     </div>
 
 <!--______________  QUESTION 3 ________________-->
@@ -94,24 +91,24 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12"><h3>Question 3 ? </h3></div>
+            <div class="col-md-12"><h3>How many cups of water do you drink every day? </h3></div>
         </div>
 
         <div class="row">
-            <span class="answer">Choise 1</span><input type="radio" name="choise" id="myRadio1">
+            <input type="radio" name="choise" id="myRadio1" value="10"><span class="answer">Less than 3 cups</span>
         </div>
         <div class="row">
-            <span class="answer">Choise 2</span><input type="radio" name="choise" id="myRadio2">
+            <input type="radio" name="choise" id="myRadio2" value="8"><span class="answer">4 - 6 cups</span>
         </div>
          <div class="row">
-            <span class="answer">Choise 3</span><input type="radio" name="choise" id="myRadio3">
+            <input type="radio" name="choise" id="myRadio3" value="5"><span class="answer">8 - 10 cups</span>
         </div>
          <div class="row">
-            <span class="answer">Choise 4</span><input type="radio" name="choise" id="myRadio4">
+            <input type="radio" name="choise" id="myRadio4" value="2"><span class="answer">more than 10 cups</span>
         </div>
         <div class="col-md-12">
-            <button onclick="prev3()">Previous</button>
-            <button onclick="next3()">Next</button>
+            <button onclick="prev3()" class="prev">Previous</button>
+            <button onclick="next3()" class="next">Next</button>
         </div>
     </div>
 <!--______________  QUESTION 4 ________________-->
@@ -126,22 +123,22 @@
         </div>
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6"><h3>Question 4 ? </h3></div>
+            <div class="col-md-6"><h3>Normally what is your average food intake?</h3></div>
             <div class="col-md-3"></div>
         </div>
 
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6"><input type="button" value="choix 1" class="answer button"/><input type="button" value="Choix 2" class="answer button" /></div>
+            <div class="col-md-6"><input type="button" onclick="q4()" value="Breakfast" class="buttonAnswer"/><input type="button" onclick="q4()" value="Lunch" class="buttonAnswer" /></div>
             <div class="col-md-3"></div>
         </div>
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6"><input type="button" value="Choix 3" class="answer button" /><input type="button" value="Choix 2" class="answer button" /></div>
+            <div class="col-md-6"><input type="button" onclick="q4()" value="Diner" class="buttonAnswer" /><input type="button" onclick="q4()" value="Snack" class="buttonAnswer" /></div>
             <div class="col-md-3"></div>
         </div>
-            <button onclick="prev4()">Previous</button>
-            <button onclick="next4()">Next</button>
+            <button onclick="prev4()" class="prev">Previous</button>
+            <button onclick="next4()" class="next">Next</button>
 
     </div>
 
@@ -157,28 +154,41 @@
         </div>
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6"><h3>Question 5 ? </h3></div>
+            <div class="col-md-6"><h3>Which one do you like more, vegetables or meat ?</h3></div>
             <div class="col-md-3"></div>
         </div>
 
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <select name="cars">
-                    <option value="10">Select your answer.</option>
-                    <option value="8">It is great to have someone there when you get home.</option>
-                    <option value="6">You’d much rather live by yourself.</option>
-                    <option value="4">Fiat</option>
-                    <option value="2">Audi</option>
+                <select name="meal" class="food">
+                    <option value="0">Select</option>
+                    <option value="8">Meat</option>
+                    <option value="6">Vegetables</option>
+                    <option value="4">Fruit</option>
+                    <option value="2">Candy</option>
                 </select>
             </div>
         </div>
 
-        <button onclick="prev5()">Previous</button>
+        <button onclick="prev5()" class="prev">Previous</button>
         <button onclick="submit()">SUBMIT</button>
-
     </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div col-md-12>
+                <ul>
+                    <li id="step1">1</li>
+                    <li id="step2">2</li>
+                    <li id="step3">3</li>
+                    <li id="step4">4</li>
+                    <li id="step5">5</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="./test_perso.js"></script>
 
 
