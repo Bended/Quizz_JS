@@ -1,10 +1,18 @@
 function next1() {
+        var a = document.getElementsByClassName("answer_txt");
+        while (a[0].value == "" || a[1].value == ""){
+            a[0].focus();
+            a[0].value = "Can not be empty";
+            a[1].focus();
+            a[1].value = "Can not be empty";
+        }
         document.getElementById("q1").style.display = "none";
         document.getElementById("q2").style.display = "block";
         document.getElementById("step1").style.background = "white";
         document.getElementById("step1").style.color = "black";
         document.getElementById("step2").style.background = "#008CBA";
         document.getElementById("step2").style.color = "white";
+
     }
 
 function next2() {
@@ -73,29 +81,48 @@ function prev5() {
 
 function q1() {
     var firstName = document.getElementsByClassName("answer_txt")[0].value;
-    var lastName = document.getElementsByClassName("answer_txt")[0].value;
+    var lastName = document.getElementsByClassName("answer_txt")[1].value;
     }
 
 function q2() {
-    var drink = [];
-    var score_q2 = 0;
+    var score_q2 = parseInt(0);
     var a = document.getElementsByName("drink");
-    for (i = 0; i < a.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         if (a[i].checked == true) {
-            drink.push(a[i].value)
-            }
-        } console.log(drink);
-        for (var x = 0; x < drink.length; i++)  {
-            if (drink[i] == "beer"){
-                score_q2 = score_q2 + 4}
-            if (drink[i] == "wine"){
-                score_q2 = score_q2 + 2}
-            if (drink[i] == "water"){
-                score_q2 = score_q2 + 10}
-            if (drink[i] == "Cola"){
-                score_q2 = score_q2 + 6}
-            }
-            console.log(score_q2);
+            score_q2 = score_q2 + parseInt(a[i].value)}
+        }
+        return score_q2;
+    }
+
+function q3() {
+    var score_q3 = parseInt(0);
+    var c = document.getElementsByName("coffee");
+    for (var i = 0; i < c.length; i++) {
+        if (c[i].checked == true) {
+             score_q3 = parseInt(c[i].value)}
+    }
+        return score_q3
+    }
+
+function q4() {
+    var score_q4 = parseInt(0);
+    var d = document.getElementsByClassName("buttonAnswer");
+    for (var i = 0; i < d.length;i++){
+        if (d[i].focused == true){
+            score_q4 = d[i].value}
+        }
+        return score_q4
     }
 
 
+function q5() {
+    var score_q5 = parseInt(0);
+    var d = document.getElementById("dropdown");
+    score_q5 = parseInt(d.value);
+    return score_q5;
+    }
+
+    function submit() {
+    var total = parseInt(q2() + q3() + q4() + q5());
+    return total;
+    }

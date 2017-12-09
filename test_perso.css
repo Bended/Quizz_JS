@@ -113,7 +113,7 @@ button.prev:hover{
     border-radius:5px;
     color: white;
     width: 130px;
-    padding: 10px 25px;
+    padding: 10px;
     text-align: center;
     align:left;
     text-decoration: none;
@@ -134,7 +134,7 @@ button.prev:hover{
 .buttonAnswer:focus{
     background:#99c2ff;
     color:black;
-    border:none
+    border:none;
     }
 
 .food{
