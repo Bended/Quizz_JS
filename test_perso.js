@@ -1,18 +1,20 @@
-function next1() {
-        var a = document.getElementsByClassName("answer_txt");
-        while (a[0].value == "" || a[1].value == ""){
-            a[0].focus();
-            a[0].value = "Can not be empty";
-            a[1].focus();
-            a[1].value = "Can not be empty";
-        }
-        document.getElementById("q1").style.display = "none";
-        document.getElementById("q2").style.display = "block";
-        document.getElementById("step1").style.background = "white";
-        document.getElementById("step1").style.color = "black";
-        document.getElementById("step2").style.background = "#008CBA";
-        document.getElementById("step2").style.color = "white";
 
+function next1() {
+        var a = document.getElementsByClassName("answer_txt")
+        if (a[0].value == "" || a[1].value == ""){
+            a[0].focus();
+            a[0].placeholder = "Please answer";
+            a[1].focus();
+            a[1].placeholder = "Please answer";
+            alert("Thank you to fill the form");}
+            else {
+                document.getElementById("q1").style.display = "none";
+                document.getElementById("q2").style.display = "block";
+                document.getElementById("step1").style.background = "white";
+                document.getElementById("step1").style.color = "black";
+                document.getElementById("step2").style.background = "#008CBA";
+                document.getElementById("step2").style.color = "white";
+                }
     }
 
 function next2() {
@@ -122,7 +124,26 @@ function q5() {
     return score_q5;
     }
 
-    function submit() {
+function submit() {
+    var txt = "";
     var total = parseInt(q2() + q3() + q4() + q5());
-    return total;
+    if (total <= 10) {
+        txt = total + "/40. Very bad"
+        } else if ((total > 10) && (total <= 20)) {
+            txt = total + "/40. Just Okay"
+            }  else if ((total > 20) && (total <= 30)) {
+                  txt = total + "/40. Good !"
+                  }  else if (total > 30) {
+                         txt = total + "/40. Perfect !!!"}
+    document.getElementById("result").innerHTML = txt;
+    document.getElementById("q5").style.display = "none";
+    document.getElementById("q6").style.display = "block";
+    document.getElementById("step").style.display = "none";
+    document.getElementById("banner").innerHTML = "Your results";
+    return txt;
     }
+
+$(window).load(function(){
+                $('#onload').modal('show');
+            });
+

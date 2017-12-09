@@ -4,6 +4,7 @@
     document.body.appendChild(x);
 }*/
 
+
 h1  {
     color:#333;
     font-family:verdana,serif;
@@ -27,12 +28,12 @@ body{
       }
 
 .image{
-    width:90%;
-    max-width:500px;
     height:auto;
+    max-width:90%;
+    max-height:300px;
     }
 
-.question{
+.question{​
       background-color:white;
       height:50px;
       font-size:25px;
@@ -61,7 +62,7 @@ body{
     text-align:center;
     }
 
-#q2, #q3, #q4, #q5{
+#q2, #q3, #q4, #q5, #q6{
     display: none;
     text-align:center;
     }
@@ -148,7 +149,7 @@ ul{
     margin-top:30px;
     }
 
-li{
+.flow{
     display:inline;
     margin:20px;
     padding: 2px 8px;
@@ -156,4 +157,34 @@ li{
     border: 2px solid #008CBA;
     border-radius: 100px;
     font-height: 20px;
+    }
+
+#result{
+    font.size:30px;
+    color:blue;
+    font-height: 80px;
+    margin-top: 40px;
+    margin-left: calc(30%);
+    padding: 10px;
+    width: 40%;
+    height:auto;
+    background-color:#d4e3fc;
+    text-align:center;
+    border-radius:5px;
+    }
+
+.resultat.reco{
+    font.size=30px;
+    }
+
+li.reco_list{
+    border:none;
+    padding:10px;
+    border:blue;
+    margin-left:30%;
+    text-align:justify;
+    display: line-item;
+    font-size: 15px;
+    width:40%;
+    /*margin-left:calc(40% - 100px);*/
     }
