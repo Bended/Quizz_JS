@@ -139,7 +139,7 @@ function submit() {
     document.getElementById("q5").style.display = "none";
     document.getElementById("q6").style.display = "block";
     document.getElementById("step").style.display = "none";
-    document.getElementById("banner").innerHTML = "Your results " + document.getElementById("fname").value + " " + document.getElementById("lname").value;
+    document.getElementById("banner").innerHTML = "Your results " + document.getElementById("fname").value + " " + document.getElementById("lname").value; //update name results
     return txt;
     }
 
